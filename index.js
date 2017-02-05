@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const Collection = require('./models/Collection');
+const Collection = require('./src//models/Collection');
 
 let connection = null;
 
