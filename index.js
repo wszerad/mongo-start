@@ -14,13 +14,14 @@ db.open = function (config) {
 				return reject(err);
 
 			connection = handler;
-			resolve(connection);
+			resolve(db);
 		});
 	});
 };
 
 db.close = function () {
 	connection.close();
+	return db;
 };
 
 db.connection = function () {
@@ -33,7 +34,7 @@ db.prepare = function (collection) {
 	return coll
 		.prepare()
 		.then(()=>{
-			return this;
+			return db;
 		});
 };
 

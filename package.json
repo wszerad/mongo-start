@@ -1,6 +1,6 @@
 {
 	"name": "mongo-fitter",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"license": "MIT",
 	"description": "MongoDB client wrapper and collection initialization tools",
 	"author": "wszerad <wszerad91@gmail.com>",
