@@ -1,0 +1,10 @@
+{
+	"name": "mongo-start",
+	"version": "0.1.0",
+	"license": "MIT",
+	"description": "MongoDB client wrapper and collection initialization tools",
+	"author": "wszerad <wszerad91@gmail.com>",
+	"dependencies": {
+		"mongodb": "^2.1.18"
+	}
+}
