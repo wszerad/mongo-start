@@ -1,4 +1,4 @@
-const db = require('../wrapper');
+const db = require('../../index');
 
 module.exports = function (name, stub) {
 	return db.connection()
