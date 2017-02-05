@@ -8,9 +8,9 @@ function db(collection) {
 }
 
 db.open = function (config) {
-	return new Promise((resolve, reject)=>{
-		MongoClient.connect(config, function(err, handler) {
-			if(err)
+	return new Promise((resolve, reject) => {
+		MongoClient.connect(config, function (err, handler) {
+			if (err)
 				return reject(err);
 
 			connection = handler;
@@ -29,11 +29,12 @@ db.connection = function () {
 };
 
 db.prepare = function (collection) {
+	collection.db = db;
 	let coll = new Collection(collection);
 
 	return coll
 		.prepare()
-		.then(()=>{
+		.then(() => {
 			return db;
 		});
 };
